@@ -2,8 +2,8 @@ name: Searcade 保号登录
 
 on:
   schedule:
-    # 每隔15天运行一次，UTC 时间 00:00
-    - cron: '0 0 */15 * *'
+    # 每隔14天运行一次，UTC 时间 00:00
+    - cron: '0 0 */14 * *'
   workflow_dispatch:  # 允许手动触发
 
 jobs:
@@ -28,6 +28,8 @@ jobs:
       - name: 运行登录脚本
         env:
           SEARCADE_ACCOUNTS: ${{ secrets.SEARCADE_ACCOUNTS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python login.py
       
       - name: 失败通知（可选）
