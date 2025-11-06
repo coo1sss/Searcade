@@ -2,8 +2,8 @@ name: Searcade 保号登录
 
 on:
   schedule:
-    # 每隔14天运行一次，UTC 时间 00:00
-    - cron: '0 0 */14 * *'
+    # 每隔7天运行一次，UTC 时间 00:00
+    - cron: '0 0 */7 * *'
   workflow_dispatch:  # 允许手动触发
 
 jobs:
