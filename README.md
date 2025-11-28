@@ -1,9 +1,7 @@
 Searcade 自动保号脚本
 自动登录 Searcade 账号，防止因长期不登录而被删除。每 15 天自动运行一次。
 
-使用方法
-1. Fork 本仓库
-2. 配置 Secrets
+配置 Secrets
 进入仓库 Settings → Secrets and variables → Actions，添加以下 secrets：
 
 必需配置：
@@ -13,6 +11,7 @@ SEARCADE_ACCOUNTS - 账号信息（JSON格式）
 可选配置：
 
 TELEGRAM_BOT_TOKEN - Telegram Bot Token
+
 TELEGRAM_CHAT_ID - Telegram Chat ID
 
 SEARCADE_ACCOUNTS 格式示例：
