@@ -1,7 +1,9 @@
 Searcade 自动保号脚本
+
 自动登录 Searcade 账号，防止因长期不登录而被删除。每 15 天自动运行一次。
 
 配置 Secrets
+
 进入仓库 Settings → Secrets and variables → Actions，添加以下 secrets：
 
 必需配置：
@@ -22,6 +24,7 @@ SEARCADE_ACCOUNTS 格式示例：
 多个账号：
 
 [{"username": "user1", "password": "pass1"}, {"username": "user2", "password": "pass2"}]
+
 3. 启用 Actions
 进入 Actions 标签页，启用工作流，点击 Run workflow 测试运行。
 
